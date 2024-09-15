@@ -12,65 +12,187 @@
     <main class="main">
       <div class="slider">
         <div class="slider__wrapper">
-          <div class="slider__items">
-            <div class="slider__item">
-              <img
-                src="../cssMemeSlider/images/mem1.jpg"
-                alt="mem1"
-                class="slider__image"
-              />
-              <span class="slider__text">mem1</span>
+          <div class="slides">
+            <input type="radio" name="slide" id="s1" />
+            <input type="radio" name="slide" id="s2" />
+            <input type="radio" name="slide" id="s3" />
+            <input type="radio" name="slide" id="s4" />
+            <input type="radio" name="slide" id="s5" />
+            <input type="radio" name="slide" id="s6" />
+            <div class="slide">
+              <div class="img__wrapper">
+                <img src="../cssMemeSlider/images/mem1.jpg" alt="mem1" />
+              </div>
+
+              <span class="slider__text">моя первая работа</span>
             </div>
-            <div class="slider__item">
-              <img
-                src="../cssMemeSlider/images/mem2.jpg"
-                alt="mem2"
-                class="slider__image"
-              />
-              <span class="slider__text">mem2</span>
+            <div class="slide">
+              <div class="img__wrapper">
+                <img src="../cssMemeSlider/images/mem2.jpg" alt="mem2" />
+              </div>
+              <span class="slider__text">Это не баг, это фича</span>
             </div>
-            <div class="slider__item">
-              <img
-                src="../cssMemeSlider/images/mem3.jpg"
-                alt="mem3"
-                class="slider__image"
-              />
-              <span class="slider__text">mem3</span>
+
+            <div class="slide">
+              <div class="img__wrapper">
+                <img src="../cssMemeSlider/images/mem3.jpg" alt="mem3" />
+              </div>
+              <span class="slider__text">спасибо индусам за codewars</span>
             </div>
-            <div class="slider__item">
-              <img
-                src="../cssMemeSlider/images/mem4.jpg"
-                alt="mem4"
-                class="slider__image"
-              />
-              <span class="slider__text">mem4</span>
+            <div class="slide">
+              <div class="img__wrapper">
+                <img src="../cssMemeSlider/images/mem4.jpg" alt="mem4" />
+              </div>
+              <span class="slider__text">всё ещё пытаюсь</span>
             </div>
-            <div class="slider__item">
-              <img
-                src="../cssMemeSlider/images/mem5.jpg"
-                alt="mem5"
-                class="slider__image"
-              />
-              <span class="slider__text">mem5</span>
+            <div class="slide">
+              <div class="img__wrapper">
+                <img src="../cssMemeSlider/images/mem5.jpg" alt="mem5" />
+              </div>
+              <span class="slider__text"
+                >тут нет смешной надписи, извините</span
+              >
             </div>
-            <div class="slider__item">
-              <img
-                src="../cssMemeSlider/images/mem6.jpg"
-                alt="mem6"
-                class="slider__image"
-              />
-              <span class="slider__text">mem6</span>
+            <div class="slide">
+              <div class="img__wrapper">
+                <img src="../cssMemeSlider/images/mem6.jpg" alt="mem6" />
+              </div>
+              <span class="slider__text">мем смешной, ситуация страшная</span>
             </div>
           </div>
-        </div>
-        <div class="slider__buttons">
-          <input type="checkbox" class="slider__button" />
-          <input type="checkbox" class="slider__button" />
-          <input type="checkbox" class="slider__button" />
-          <input type="checkbox" class="slider__button" />
+          <div class="slider__navigation">
+            <label for="s1" class="slider__button"></label>
+            <label for="s2" class="slider__button"></label>
+            <label for="s3" class="slider__button"></label>
+            <label for="s4" class="slider__button"></label>
+            <label for="s5" class="slider__button"></label>
+            <label for="s6" class="slider__button"></label>
+          </div>
         </div>
       </div>
     </main>
     <footer class="footer"></footer>
   </body>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>cssMemeSlider</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <label for="mem1">
+              <div class="slider__item slider__item--1">
+                <img
+                  src="../cssMemeSlider/images/mem1.jpg"
+                  alt="mem1"
+                  class="slider__image"
+                />
+                <span class="slider__text">mem1</span>
+              </div>
+            </label>
+            <label for="mem2">
+              <div class="slider__item slider__item--2">
+                <img
+                  src="../cssMemeSlider/images/mem2.jpg"
+                  alt="mem2"
+                  class="slider__image"
+                />
+                <span class="slider__text">mem2</span>
+              </div>
+            </label>
+            <label for="mem3">
+              <div class="slider__item slider__item--3">
+                <img
+                  src="../cssMemeSlider/images/mem3.jpg"
+                  alt="mem3"
+                  class="slider__image"
+                />
+                <span class="slider__text">mem3</span>
+              </div>
+            </label>
+            <label for="mem4">
+              <div class="slider__item slider__item--4">
+                <img
+                  src="../cssMemeSlider/images/mem4.jpg"
+                  alt="mem4"
+                  class="slider__image"
+                />
+                <span class="slider__text">mem4</span>
+              </div>
+            </label>
+            <label for="mem5">
+              <div class="slider__item slider__item--5">
+                <img
+                  src="../cssMemeSlider/images/mem5.jpg"
+                  alt="mem5"
+                  class="slider__image"
+                />
+                <span class="slider__text">mem5</span>
+              </div>
+            </label>
+            <label for="mem6">
+              <div class="slider__item slider__item--6">
+                <img
+                  src="../cssMemeSlider/images/mem6.jpg"
+                  alt="mem6"
+                  class="slider__image"
+                />
+                <span class="slider__text">mem6</span>
+              </div>
+            </label>
+          </div>
+        </div>
+        <form class="slider__buttons">
+          <input
+            name="button"
+            type="radio"
+            class="slider__button slider__button--1"
+            id="mem1"
+            checked
+          />
+          <input
+            name="button"
+            type="radio"
+            class="slider__button slider__button--2"
+            id="mem2"
+          />
+          <input
+            name="button"
+            type="radio"
+            class="slider__button slider__button--3"
+            id="mem3"
+          />
+          <input
+            name="button"
+            type="radio"
+            class="slider__button slider__button--4"
+            id="mem4"
+          />
+          <input
+            name="button"
+            type="radio"
+            class="slider__button slider__button--5"
+            id="mem5"
+          />
+          <input
+            name="button"
+            type="radio"
+            class="slider__button slider__button--6"
+            id="mem6"
+          />
+        </form>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html> -->

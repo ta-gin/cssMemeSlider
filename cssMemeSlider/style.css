@@ -1,12 +1,117 @@
 html {
   font-size: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+body {
+  background-color: rgb(120, 119, 119);
+}
+
+.slider {
+  margin: 5rem 0;
+}
+
+.slider__wrapper {
+  background-color: rgba(26, 26, 27, 0.644);
+  margin: 0 auto;
+  max-width: 60rem;
+  height: 57rem;
+  border: 5px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slides {
+  display: flex;
+  transform: translateX(40%);
+}
+
+.slides input {
+  visibility: hidden;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem;
+  transition: 0.3s ease-in;
+}
+
+.img__wrapper img {
+  width: 60rem;
+  height: 47rem;
+  object-fit: contain;
+}
+
+.slider__navigation {
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.slider__text {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+.slider__button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.46);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.slider__button:hover {
+  background-color: white;
+  transform: scale(1.2) translateY(3px);
+}
+
+.slider__button:active,
+.slider__button:focus {
+  transform: scale(1.2) translateY(-3px);
+}
+
+.slider__button #s1:checked ~ .slide {
+  transform: translateX(0%);
+}
+
+#s2:checked ~ .slide {
+  transform: translateX(-105%);
+}
+
+#s3:checked ~ .slide {
+  transform: translateX(-205%);
+}
+
+#s4:checked ~ .slide {
+  transform: translateX(-311%);
+}
+
+#s5:checked ~ .slide {
+  transform: translateX(-415%);
+}
+
+#s6:checked ~ .slide {
+  transform: translateX(-515%);
+}
+
+/* html {
+  font-size: 10px;
 }
 
 /* body {
   background-color: rgb(182, 174, 188);
 } */
 
-.slider {
+/* .slider {
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -22,9 +127,9 @@ html {
   border: 5px solid black;
   border-radius: 5px;
   overflow: hidden;
-}
+} */
 
-.slider__items {
+/* .slider__items {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -47,7 +152,15 @@ html {
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
   font-size: 2rem;
+} */
+
+/* .slider__buttons {
 }
 
 .slider__buttons {
+  border-radius: 100%;
 }
+
+.slider__button--2:checked .slider__items {
+  transform: translateX(-100%);
+} */
